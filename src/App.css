@@ -1,0 +1,71 @@
+.app {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.app .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.app .container .name-list,
+.app .container .reservation-list {
+  padding: 30px;
+  height: 100vh;
+  position: relative;
+  overflow-y: auto;
+}
+.app .container .name-list {
+  border-right: thin solid #ccc;
+  width: 300px;
+}
+.app .container .reservation-list {
+  flex: 1;
+}
+.app .container .name-list h1 {
+  font-size: 1.5rem;
+}
+.app .container .name-list .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: calc(100vh - 100px);
+  padding-top: 15px;
+}
+.app .container .name-list .content .list {
+  width: 100%;
+  height: calc(100vh - 150px);
+  position: relative;
+  overflow-y: auto;
+}
+.app .container .name-list .content .list .name {
+  border: thin solid #ccc;
+  padding: 7px 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.app .container .reservation-list .card {
+  border: thin solid #ccc;
+  padding: 7px 14px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.app .container .reservation-list .card .info-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app .container .reservation-list .card .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: thin solid #ccc;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.app .container .reservation-list .card .list p {
+  margin-right: 10px;
+  font-size: 0.9rem;
+}
